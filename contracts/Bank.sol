@@ -24,6 +24,6 @@ contract Bank {
     function withdraw(address payable x) public {
         require(x == msg.sender,"not owner");
         (bool success,) = x.call{value:address(this).balance}("");
-        require(success,"not success");
+        require(success,"not success1");
     }
 }
