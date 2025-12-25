@@ -14,7 +14,7 @@ contract Bank {
     function getOwner() public view returns(address){
         return owner;
     }
-    function sendeth(address payable x,uint amount) payable public{
+    function sendeth(address payable x,uint amount) payable public virtual{
         (bool success,) = x.call{value:amount}("");
         require(success,"not success");
     }
