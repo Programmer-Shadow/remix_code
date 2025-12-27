@@ -1,6 +1,5 @@
-// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
-import "./Bank.sol";
+import "./02Bank.sol";
 contract BigBank is Bank{
     constructor() payable {
         owner = msg.sender;
