@@ -21,7 +21,7 @@ contract BaseERC20 {
         symbol = "BERC20";
         decimals = 18;
         totalSupply = 100000000 * (10 ** uint256(decimals));
-        balances[msg.sender] = totalSupply;  
+        balances[msg.sender] = totalSupply; 
     }
 
     function balanceOf(address _owner) public view returns (uint256 balance) {
